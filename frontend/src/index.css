@@ -1,0 +1,35 @@
+/* index.css */
+
+/* Font default untuk seluruh halaman */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap');
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #ffffff; /* Latar belakang terang */
+  color: #000000; /* Teks terang */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+body.dark-mode {
+  background-color: #121212; /* Warna latar belakang gelap */
+  color: #ffffff; /* Warna teks untuk mode gelap */
+}
+
+.card {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi halus */
+}
+
+body.dark-mode .card {
+  background-color: #1e1e1e; /* Latar belakang Card gelap */
+  color: #ffffff; /* Teks dalam Card */
+}
+
+
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transisi halus */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Zoom in seluruh card */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow saat hover */
+}
